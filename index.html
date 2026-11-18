@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harrix — Kazı Kayıt Sistemi</title>
+<meta name="description" content="Harrix, arkeolojik kazılar için kayıt ve yönetim sistemi: açmadan rapora, sahadan arşive bütün kayıtlar tek programda.">
+<meta property="og:title" content="Harrix — Kazı Kayıt Sistemi">
+<meta property="og:description" content="Toprak unutmaz. Harrix kaydeder. Arkeolojik kazılar için kayıt ve yönetim sistemi.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/harrix-logo.png">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F3EEE4}
+a{color:#B5542C}a:hover{color:#8E3F1F}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+:focus-visible{outline:3px solid #CD6531;outline-offset:2px}
+</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #2B2118; background-color: #F3EEE4; font-size: 1.05rem; line-height: 1.6">
+
+<header style="position: relative; border-bottom: 1px solid #DED3C0; background-color: #FAF6EF">
+<nav aria-label="Ana menü" style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#ust" style="display: flex; align-items: center"><img src="img/harrix-logo.png" width="1240" height="512" alt="Harrix — Kazı Kayıt Sistemi" style="height: 44px; width: auto; display: block"></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 0.95rem; font-weight: 500">
+<a href="#ozellikler" style="color: #2B2118; text-decoration: none">Özellikler</a>
+<a href="#nasil" style="color: #2B2118; text-decoration: none">Nasıl çalışır</a>
+<a href="#ekosistem" style="color: #2B2118; text-decoration: none">Ekosistem</a>
+<a href="#sss" style="color: #2B2118; text-decoration: none">SSS</a>
+<a href="#basvuru" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 10px; background-color: #B5542C; color: #FFFFFF; text-decoration: none; font-weight: 600">Pilota başvur</a>
+</div>
+</nav>
+</header>
+
+<section id="ust" style="background-color: #231A13; color: #F3EEE4; background-image: linear-gradient(rgba(243,238,228,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(243,238,228,0.05) 1px, transparent 1px); background-size: 24px 24px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #E08A5C">KAZI KAYIT SİSTEMİ</div>
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2.6rem, 5.5vw, 4.4rem); line-height: 1.04; letter-spacing: -0.01em">Toprak unutmaz.<br>Harrix kaydeder.</h1>
+<p style="margin: 0; font-size: 1.2rem; line-height: 1.6; color: #D9CDB8; max-width: 560px">Açmadan rapora, sahadan arşive: arkeolojik kazının bütün kayıtları tek programda. Ekip sahada telefondan girer, uzmanlar kendi sekmesinde çalışır, kazı başkanı onaylar ve raporu tek tıkla alır.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="#basvuru" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 12px; background-color: #CD6531; color: #FFFFFF; text-decoration: none; font-weight: 600">2027 pilotuna başvur</a>
+<a href="#ekranlar" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 12px; border: 1.5px solid rgba(243,238,228,0.45); color: #F3EEE4; text-decoration: none; font-weight: 600">Ekranları gör</a>
+</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: #B9AA92">Bilgisayar · tablet · telefon · Türkçe / English</div>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; position: relative; padding-bottom: 40px">
+<img src="img/matris.png" width="2560" height="1600" alt="Harris matrisi ekranı: bağlamlar tabakalara göre gruplu, seçili bağlamın ilişkileri ve kontrol önerisi" style="width: 100%; height: auto; display: block; border-radius: 14px; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
+<img src="img/acma.png" width="780" height="1688" alt="Telefonda açma kartı: plankarede bugünün adımları" style="position: absolute; right: -8px; bottom: 0; width: 34%; height: auto; display: block; border-radius: 22px; border: 6px solid #120D09; box-shadow: 0 20px 50px rgba(0,0,0,0.5)">
+</div>
+</div>
+<div style="display: flex; flex-direction: column" aria-hidden="true">
+<div style="height: 10px; background-color: #6B5240"></div>
+<div style="height: 18px; background-color: #4E3B2D"></div>
+</div>
+</section>
+
+<section aria-labelledby="turler-baslik" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 300px; max-width: 360px; margin: 0 auto">
+<img src="img/sihirbaz.png" width="780" height="1688" loading="lazy" alt="Yeni kazı sihirbazı: kazı türü seçimi" style="width: 100%; height: auto; display: block; border-radius: 24px; border: 6px solid #2B2118; box-shadow: 0 18px 40px rgba(43,33,24,0.2)">
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #A4471F">HER KAZIYA KENDİ ŞABLONU</div>
+<h2 id="turler-baslik" style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.1">Höyükte de, mağarada da, su altında da.</h2>
+<p style="margin: 0; color: #4A3B2E; max-width: 600px">Kazıyı kurarken türünü, dönemini, ölçeğini ve yöntemini seçersiniz. Harrix hiyerarşiyi, formları ve uzman sekmelerini buna göre hazırlar; terimler sahadaki gerçek uygulamayı izler.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 8px">
+<div style="padding: 16px 18px; border-radius: 12px; background-color: #FAF6EF; border: 1px solid #DED3C0"><div style="font-weight: 600">Höyük</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: #6E5846">Açma › Plankare › Mimari tabaka</div></div>
+<div style="padding: 16px 18px; border-radius: 12px; background-color: #FAF6EF; border: 1px solid #DED3C0"><div style="font-weight: 600">Mağara / Kaya sığınağı</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: #6E5846">Kare › Alt kare › Seviye</div></div>
+<div style="padding: 16px 18px; border-radius: 12px; background-color: #FAF6EF; border: 1px solid #DED3C0"><div style="font-weight: 600">Açık alan</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: #6E5846">Plankare › Alt kare › Seviye</div></div>
+<div style="padding: 16px 18px; border-radius: 12px; background-color: #FAF6EF; border: 1px solid #DED3C0"><div style="font-weight: 600">Sualtı</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: #6E5846">Izgara › Kare › Dalış seansı</div></div>
+<div style="padding: 16px 18px; border-radius: 12px; background-color: #FAF6EF; border: 1px solid #DED3C0"><div style="font-weight: 600">Kent / Antik kent</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: #6E5846">Sektör › Yapı › Mekân</div></div>
+<div style="padding: 16px 18px; border-radius: 12px; background-color: #FAF6EF; border: 1px solid #DED3C0"><div style="font-weight: 600">Nekropol / Tümülüs</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: #6E5846">Mezar grubu › Mezar › İskelet</div></div>
+</div>
+<div style="color: #4A3B2E">Yüzey araştırmaları için ayrı bir modül de var: il ve ilçe seçilir, alanlar koordinatla ya da haritadan girilir.</div>
+</div>
+</section>
+
+<section id="ozellikler" aria-labelledby="ozellik-baslik" style="background-color: #FAF6EF; border-top: 1px solid #DED3C0; border-bottom: 1px solid #DED3C0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #A4471F">ÖZELLİKLER</div>
+<h2 id="ozellik-baslik" style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.1">Kazı defterinin dijital hâli, sahanın diliyle.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M7 20V9l5-5 5 5v11"></path><path d="M10 20v-5h4v5"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Bugün ekranı</h3>
+<p style="margin: 0; color: #4A3B2E">Girişte rolünüze göre günün işleri: delta, görevler, onay bekleyen raporlar, eksik kayıtlar.</p>
+</div>
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c2 .7 3.2 2.5 3.5 5.2"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Her uzman kendi sekmesinde</h3>
+<p style="margin: 0; color: #4A3B2E">Yontmataş, zooarkeoloji, arkeobotanik… Her uzman yalnızca kendi alanının verisini girer.</p>
+</div>
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2.5" width="6" height="4" rx="1"></rect><rect x="3" y="11" width="6" height="4" rx="1"></rect><rect x="15" y="11" width="6" height="4" rx="1"></rect><rect x="9" y="17.5" width="6" height="4" rx="1"></rect><path d="M12 6.5V9M6 11V9h12v2M6 15v1.2h12V15M12 16.2v1.3"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Harris matrisi</h3>
+<p style="margin: 0; color: #4A3B2E">Bağlamlar arasındaki ilişkiler çizilir; eksik ya da çelişkili ilişki için kontrol önerisi gelir.</p>
+</div>
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5h8l4 4v15H6z"></path><path d="M14 2.5v4h4M9 12h6M9 16h6"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Raporlar kendini derler</h3>
+<p style="margin: 0; color: #4A3B2E">15 günlük ve kazı sonu raporları kayıtlardan hazırlanır, onay akışından geçer, Word olarak iner.</p>
+</div>
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Doğrulama kodu</h3>
+<p style="margin: 0; color: #4A3B2E">Her rapor <span style="font-family: 'IBM Plex Mono', monospace">HRX-XXXX-XXXX</span> koduyla ve karekodla gelir; değişmediği kontrol edilebilir.</p>
+</div>
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="1.8"></circle><path d="M21 16l-5-5-8 8"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Fotoğraf arşivi</h3>
+<p style="margin: 0; color: #4A3B2E">Türe, yere, açmaya, etikete ve tarihe göre süzün; buluntuya bağlayın, künye listesiyle birlikte indirin.</p>
+</div>
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path><path d="M9 10h.01M12 10h.01M15 10h.01"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Harri, yardım arkadaşı</h3>
+<p style="margin: 0; color: #4A3B2E">Mala karakterimiz Harri, internet olmadan da soruları yanıtlar ve sizi ilgili ekrana götürür.</p>
+</div>
+
+<div style="padding: 28px; border-radius: 16px; background-color: #FFFFFF; border: 1px solid #E6DCCB; display: flex; flex-direction: column; gap: 12px">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B5542C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+<h3 style="margin: 0; font-size: 1.15rem">Veriler kazınızda</h3>
+<p style="margin: 0; color: #4A3B2E">Program kazı başkanının bilgisayarına kurulur. Uzaktan destek yalnızca başkanın onayıyla açılır.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="nasil" aria-labelledby="nasil-baslik" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #A4471F">NASIL ÇALIŞIR</div>
+<h2 id="nasil-baslik" style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.1">Sahadan rapora tek akış.</h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #2B2118">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; color: #A4471F">01</div>
+<h3 style="margin: 0; font-size: 1.15rem">Kazıyı tanımlayın</h3>
+<p style="margin: 0; color: #4A3B2E">Tür, dönem, ölçek ve yöntem: dört adımda kazınız hazır.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #2B2118">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; color: #A4471F">02</div>
+<h3 style="margin: 0; font-size: 1.15rem">Ekip sahada girer</h3>
+<p style="margin: 0; color: #4A3B2E">Kot, sayım, gözlem, fotoğraf ve günlük; telefondan, açmanın başında.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #2B2118">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; color: #A4471F">03</div>
+<h3 style="margin: 0; font-size: 1.15rem">Uzmanlar işler</h3>
+<p style="margin: 0; color: #4A3B2E">Buluntular uzman sekmelerinde ölçülür, sınıflanır, çizime ayrılır.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #B5542C">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; color: #A4471F">04</div>
+<h3 style="margin: 0; font-size: 1.15rem">Başkan onaylar</h3>
+<p style="margin: 0; color: #4A3B2E">Rapor kayıtlardan derlenir, kontrol edilir, onaylanır ve indirilir.</p>
+</li>
+</ol>
+</section>
+
+<section id="ekranlar" aria-labelledby="ekran-baslik" style="background-color: #231A13; color: #F3EEE4">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #E08A5C">EKRANLAR</div>
+<h2 id="ekran-baslik" style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.1">Masada rapor, sahada form.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+<figure style="margin: 0; flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<img src="img/rapor.png" width="2560" height="1600" loading="lazy" alt="15 günlük rapor ekranı: bölümler, rapor sayfası ve onay akışı" style="width: 100%; height: auto; display: block; border-radius: 14px">
+<figcaption style="color: #CFC3AE; font-size: 0.95rem">15 günlük rapor: bölümler kayıtlardan otomatik dolar, eksik uzman notları işaretlenir.</figcaption>
+</figure>
+<figure style="margin: 0; flex: 1 1 240px; max-width: 340px; display: flex; flex-direction: column; gap: 12px">
+<img src="img/yontmatas.png" width="780" height="1688" loading="lazy" alt="Telefonda yontmataş uzman formu: hammadde, teknolojik sınıf ve ölçüler" style="width: 100%; height: auto; display: block; border-radius: 22px; border: 6px solid #120D09">
+<figcaption style="color: #CFC3AE; font-size: 0.95rem">Yontmataş formu: hammadde, sınıf, ölçü, korteks; tek elle, sahada.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section id="ekosistem" aria-labelledby="eko-baslik" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #A4471F">EKOSİSTEM</div>
+<h2 id="eko-baslik" style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.1">Bir program değil, bir aile.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<div style="padding: 28px; border-radius: 16px; background-color: #2B2118; color: #F3EEE4; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.12em; color: #E08A5C">ŞİMDİ</div>
+<h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.5rem">Kazı Takip</h3>
+<p style="margin: 0; color: #D9CDB8">Kazı ekibinin günlük çalıştığı program: kayıt, görev, fotoğraf, rapor.</p>
+</div>
+<div style="padding: 28px; border-radius: 16px; background-color: #2B2118; color: #F3EEE4; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.12em; color: #E08A5C">ŞİMDİ</div>
+<h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.5rem">Harrix Merkez</h3>
+<p style="margin: 0; color: #D9CDB8">Kazı başkanının masaüstü paneli: günaydın hatırlatmaları, kazılar, destek, bülten.</p>
+</div>
+<div style="padding: 28px; border-radius: 16px; background-color: #2B2118; color: #F3EEE4; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.12em; color: #E08A5C">ŞİMDİ</div>
+<h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.5rem">Arkeoloji Bülteni</h3>
+<p style="margin: 0; color: #D9CDB8">Arkeoloji haberleri, makaleler ve tezler her gün tek yerde; masaüstünde ve telefonda.</p>
+</div>
+<div style="padding: 28px; border-radius: 16px; background-color: #FAF6EF; border: 1.5px dashed #B9A88F; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.12em; color: #6E5846">YAKINDA</div>
+<h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.5rem">Akademi ve ArkeoPasaport</h3>
+<p style="margin: 0; color: #4A3B2E">Arkeologlar arası bilgi paylaşımı ve seminerler; ziyaretçiler için ören yeri mühürleri.</p>
+</div>
+</div>
+</section>
+
+<section id="basvuru" aria-labelledby="basvuru-baslik" style="background-color: #EADFCC; border-top: 1px solid #DED3C0; border-bottom: 1px solid #DED3C0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #A4471F">2027 PİLOT PROGRAMI</div>
+<h2 id="basvuru-baslik" style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.1">Kazınızda ücretsiz deneyin.</h2>
+<p style="margin: 0; color: #4A3B2E">2027 sezonunda farklı türde birkaç kazıyla pilot çalışma yapıyoruz. Kurulumu ve eğitimi biz yapıyoruz; karşılığında yalnızca düzenli geri bildirim istiyoruz.</p>
+<ul style="margin: 0; padding-left: 20px; color: #4A3B2E; display: flex; flex-direction: column; gap: 6px">
+<li>Kazı evine kurulum ve ekip eğitimi</li>
+<li>Sezon boyunca destek</li>
+<li>İsteklerinizin yol haritasına girmesi</li>
+</ul>
+</div>
+<form id="basvuru-formu" aria-label="Pilot başvuru formu" style="flex: 1 1 420px; min-width: 0; padding: 32px; border-radius: 18px; background-color: #FFFFFF; border: 1px solid #DED3C0; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ad" style="font-weight: 600; font-size: 0.95rem">Ad soyad</label>
+<input id="ad" name="ad" type="text" autocomplete="name" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1.5px solid #CDBFA8; font: inherit; background-color: #FFFFFF">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="kurum" style="font-weight: 600; font-size: 0.95rem">Kurum</label>
+<input id="kurum" name="kurum" type="text" autocomplete="organization" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1.5px solid #CDBFA8; font: inherit; background-color: #FFFFFF">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+<label for="kazi" style="font-weight: 600; font-size: 0.95rem">Kazı adı</label>
+<input id="kazi" name="kazi" type="text" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1.5px solid #CDBFA8; font: inherit; background-color: #FFFFFF">
+</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+<label for="tur" style="font-weight: 600; font-size: 0.95rem">Kazı türü</label>
+<select id="tur" name="tur" style="min-height: 48px; padding: 0 12px; border-radius: 10px; border: 1.5px solid #CDBFA8; font: inherit; background-color: #FFFFFF">
+<option>Höyük</option>
+<option>Mağara / Kaya sığınağı</option>
+<option>Açık alan</option>
+<option>Sualtı</option>
+<option>Kent / Antik kent</option>
+<option>Nekropol / Tümülüs</option>
+<option>Yüzey araştırması</option>
+</select>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="eposta" style="font-weight: 600; font-size: 0.95rem">E-posta</label>
+<input id="eposta" name="eposta" type="email" autocomplete="email" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1.5px solid #CDBFA8; font: inherit; background-color: #FFFFFF">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="mesaj" style="font-weight: 600; font-size: 0.95rem">Not (isteğe bağlı)</label>
+<textarea id="mesaj" name="mesaj" rows="3" style="padding: 12px 14px; border-radius: 10px; border: 1.5px solid #CDBFA8; font: inherit; resize: vertical; background-color: #FFFFFF"></textarea>
+</div>
+<button type="submit" style="min-height: 52px; border: none; border-radius: 12px; background-color: #B5542C; color: #FFFFFF; font: inherit; font-weight: 600; cursor: pointer">Başvuruyu gönder</button>
+<p style="margin: 0; font-size: 0.9rem; color: #5A4A3C">Gönder'e basınca e-posta uygulamanız, bilgileriniz yazılı bir başvuru mesajıyla açılır. Dilerseniz doğrudan <a href="mailto:harrixapp@gmail.com">harrixapp@gmail.com</a> adresine de yazabilirsiniz.</p>
+</form>
+</div>
+</section>
+
+<section id="sss" aria-labelledby="sss-baslik" style="max-width: 860px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; letter-spacing: 0.16em; color: #A4471F">SIK SORULANLAR</div>
+<h2 id="sss-baslik" style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.1">Merak edilenler</h2>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #CDBFA8">
+<details style="padding: 20px 0; border-bottom: 1px solid #CDBFA8"><summary style="font-weight: 600; font-size: 1.1rem; min-height: 44px; display: flex; align-items: center">Verilerimiz nerede tutuluyor?</summary><p style="margin: 12px 0 0; color: #4A3B2E">Program kazı başkanının bilgisayarına kurulur; kayıtlar orada durur. Uzaktan destek yalnızca başkan onay verdiğinde açılır.</p></details>
+<details style="padding: 20px 0; border-bottom: 1px solid #CDBFA8"><summary style="font-weight: 600; font-size: 1.1rem; min-height: 44px; display: flex; align-items: center">Hangi cihazlarla kullanılır?</summary><p style="margin: 12px 0 0; color: #4A3B2E">Kazı evindeki bilgisayara kurulur; ekip Android ya da iPhone telefonlardan, tabletten ve bilgisayardan bağlanır.</p></details>
+<details style="padding: 20px 0; border-bottom: 1px solid #CDBFA8"><summary style="font-weight: 600; font-size: 1.1rem; min-height: 44px; display: flex; align-items: center">Ücretli mi?</summary><p style="margin: 12px 0 0; color: #4A3B2E">2027 pilot programı ücretsizdir. Pilot dönemin ardından sezonluk ve kurumsal lisans seçenekleri açıklanacaktır.</p></details>
+<details style="padding: 20px 0; border-bottom: 1px solid #CDBFA8"><summary style="font-weight: 600; font-size: 1.1rem; min-height: 44px; display: flex; align-items: center">Raporlar Bakanlık formatına uygun mu?</summary><p style="margin: 12px 0 0; color: #4A3B2E">15 günlük ve kazı sonu raporları kayıtlardan derlenip Word olarak iner. Bakanlık formatlarına doğrudan çıktı yol haritamızda.</p></details>
+<details style="padding: 20px 0; border-bottom: 1px solid #CDBFA8"><summary style="font-weight: 600; font-size: 1.1rem; min-height: 44px; display: flex; align-items: center">Program güncellenecek mi?</summary><p style="margin: 12px 0 0; color: #4A3B2E">Evet. Güncellemeler yayımlandıkça program bildirir, yenilikleri gösterir; güncellemeyi kazı başkanı onaylar.</p></details>
+<details style="padding: 20px 0; border-bottom: 1px solid #CDBFA8"><summary style="font-weight: 600; font-size: 1.1rem; min-height: 44px; display: flex; align-items: center">İngilizce kullanılabilir mi?</summary><p style="margin: 12px 0 0; color: #4A3B2E">Evet, her kullanıcı dili Türkçe ya da İngilizce olarak kendisi seçer.</p></details>
+</div>
+</section>
+
+<footer style="background-color: #231A13; color: #D9CDB8">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 380px">
+<div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: 2rem; color: #F3EEE4">Harrix</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.14em; color: #B9AA92">KAZI KAYIT SİSTEMİ</div>
+<div>Toprak unutmaz. Harrix kaydeder.</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-weight: 600; color: #F3EEE4">Sayfa</div>
+<a href="#ozellikler" style="color: #D9CDB8">Özellikler</a>
+<a href="#nasil" style="color: #D9CDB8">Nasıl çalışır</a>
+<a href="#ekosistem" style="color: #D9CDB8">Ekosistem</a>
+<a href="#sss" style="color: #D9CDB8">SSS</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-weight: 600; color: #F3EEE4">İletişim</div>
+<a href="mailto:harrixapp@gmail.com" style="color: #D9CDB8">harrixapp@gmail.com</a>
+<a href="https://www.instagram.com/harrixapp/" style="color: #D9CDB8">Instagram: @harrixapp</a>
+<a href="#basvuru" style="color: #E08A5C">Pilota başvur</a>
+</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid rgba(243,238,228,0.15); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.9rem; color: #B9AA92">
+<span>© 2026 Harrix</span>
+<span>Toprak unutmaz. Harrix kaydeder.</span>
+</div>
+</footer>
+
+</div>
+<script>
+document.getElementById('basvuru-formu').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var d = function (id) { return (document.getElementById(id).value || '').trim(); };
+  var govde = 'Ad soyad: ' + d('ad') + '\nKurum: ' + d('kurum') + '\nKazı adı: ' + d('kazi') + '\nKazı türü: ' + d('tur') +
+    '\nE-posta: ' + d('eposta') + '\n\nNot:\n' + d('mesaj');
+  location.href = 'mailto:harrixapp@gmail.com?subject=' + encodeURIComponent('Harrix 2027 pilot başvurusu' + (d('kazi') ? ' — ' + d('kazi') : '')) +
+    '&body=' + encodeURIComponent(govde);
+});
+</script>
+</body>
+</html>
